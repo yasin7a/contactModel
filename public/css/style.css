@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Oswald:wght@300&family=Palanquin:wght@400;500&family=Raleway:ital,wght@0,400;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.1s;
+}
+
+::-webkit-selection {
+  background: #4256ae;
+  color: #fff;
+}
+
+::selection {
+  background: #4249ae;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #0a0026;
+  font-family: "Dosis", sans-serif;
+}
+.wrap {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 670px;
+  display: block;
+  margin: 0 auto;
+}
+.bgupload-vdo {
+  position: relative;
+  z-index: 5;
+}
+.bgupload-vdo .cover-upload-vdo {
+  background: #141444;
+  padding: 28px 25px;
+  box-shadow: 0px 7px 31px 0px #00000085;
+  border-radius: 6px;
+  height: 100%;
+  margin-top: 1rem;
+}
+h2 {
+  color: #ece1dc;
+  font-size: 43px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.bgupload-vdo .cover-upload-vdo h2.formg {
+  margin-bottom: 0px;
+}
+
+.bgupload-vdo .cover-upload-vdo label {
+  display: block;
+  color: #898989;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+.bgupload-vdo .cover-upload-vdo label img {
+  margin-top: -5px;
+  width: 15px;
+  margin-left: 4px;
+}
+.bgupload-vdo .cover-upload-vdo .inp1,
+.bgupload-vdo .cover-upload-vdo .inp2,
+.bgupload-vdo .cover-upload-vdo .inp3,
+.bgupload-vdo .cover-upload-vdo .inpTextarea {
+  background: #0c0222;
+  border: 2px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 8px 10px;
+  color: #898989;
+  margin-bottom: 15px;
+  resize: none;
+}
+.bgupload-vdo input:focus-visible,
+.bgupload-vdo textarea:focus-visible {
+  outline: 1px solid rgb(1, 2, 46);
+}
+.bgupload-vdo .cover-upload-vdo .inp1 {
+  width: 50%;
+}
+.bgupload-vdo .cover-upload-vdo .inp2 {
+  width: 100%;
+}
+.bgupload-vdo .cover-upload-vdo .inp2 {
+  -webkit-appearance: none;
+  appearance: textfield;
+}
+
+
+.bgupload-vdo .cover-upload-vdo button {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+  font-weight: bold;
+  background:linear-gradient(0deg, #440a22 38%, #d51e51 82%);
+  padding: 7px 18px;
+  border-radius: 6px;
+  margin-left: auto;
+  display: block;
+  box-shadow: 0px 10px 20px 0px #0b0f0dc4;
+  transition: 0.1s;
+  font-family: "Dosis", sans-serif;
+  font-size: 22px;
+}
+.bgupload-vdo .cover-upload-vdo button:hover {
+  box-shadow: 0px 9px 8px 0px #0b0f0dc4;
+}
+.bgupload-vdo .cover-upload-vdo button:active {
+  transform: scale(0.98);
+}
+.bgupload-vdo .cover-upload-vdo button img {
+  margin-top: -3px;
+  width: 8px;
+}
+.bgupload-vdo .cover-upload-vdo button img.sendicon {
+  margin-top: -3px;
+  width: 15px;
+  margin-right: 4px;
+}
+
+
+ .wrapper {
+
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding: 1.5em;
+}
+
+.table-responsive {
+	border-collapse: collapse;
+	margin: 0;
+	width: 100%;
+	color: #464646;
+	text-align: center;
+}
+.table-responsive * {
+  font-size: 13px;
+}
+.table-responsive i.blank {
+  display: none;
+}
+.table-responsive th {
+  border-bottom: 1px solid shade(#6c6c6c, 25%);
+  text-align: left;
+  padding: 0.75em 1.0714285714em;
+  text-align: center;
+}
+.table-responsive th:not([data-title]) {
+  font-weight: bold;
+}
+
+.table-responsive th.table-column {
+  width: 200px;
+}
+.table-responsive th.row {
+	background: #0d014a;
+	color: #fff;
+}
+
+
+.table-responsive tr {
+  margin: 0 0 0rem 0;
+}
+.table-responsive tr:nth-child(odd) {
+  background: white;
+}
+.table-responsive tr:nth-child(2n+1).header-row {
+	background: #100255 !important;
+	color: #fff;
+}
+.table-responsive tr:nth-child(even) {
+  background: whitesmoke;
+}
+.table-responsive tr td {
+	padding: 15px;
+}
+
+.table-responsive tr td ul {
+  margin-left: 0;
+  margin-bottom: 5px;
+  padding: 0 0 0 1.5em;
+}
+.table-responsive tr td ul li {
+  padding: 3px 0;
+}
+
+.edit, .delete {
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+	border: 0;
+	font-weight: bold;
+	background: linear-gradient(0deg, #1e5326 38%, #3ea449 82%);
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-left: auto;
+	box-shadow: 0px 3px 5px 0px #0b0f0dc4;
+	transition: 0.1s;
+	font-family: "Dosis", sans-serif;
+	font-size: 15px;
+	display: inline-block;
+}
+.delete{
+  background:linear-gradient(0deg, #440a0a 38%, #d51e27 82%);
+}
+
+
+.isvalid{
+  border-color: red !important;
+}
+.isvalidText{
+  color: red
+}
