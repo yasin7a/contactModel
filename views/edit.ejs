@@ -12,14 +12,18 @@
     <div class="wrap bgupload-vdo">
       <div class="container">
         <div class="cover-upload-vdo">
-          <h2>Contact Model</h2>
-          <form action="/" method="post" id="form">
+          <h2>
+            Edit Model
+
+            <h5 style="color: #fff; text-align: center"><%= contacts.id %></h5>
+          </h2>
+          <form action="/edit" method="post" id="form">
             <label> <%= error.name? error.name : 'Name' %> </label>
             <input
               class="inp1 <%= error.name? 'isvalid': '' %>"
               type="text"
               name="name"
-              value="<%=  data.name  %>"
+              value="<%=  contacts.name? contacts.name:'' %>"
               placeholder="Enter Name"
             />
             <label> <%= error.email ? error.email : 'Email' %></label>
@@ -27,7 +31,7 @@
               class="inp2 <%= error.email? 'isvalid': '' %>"
               type="email"
               name="email"
-              value="<%=  data.email  %>"
+              value="<%=  contacts.email? contacts.email:''  %>"
               placeholder="Enter Email"
             />
             <label> <%= error.phone ? error.phone : 'Phone' %></label>
@@ -35,44 +39,16 @@
               class="inp2 <%= error.phone? 'isvalid': '' %>"
               type="number"
               name="phone"
-              value="<%=  data.phone  %>"
+              value="<%=  contacts.phone? contacts.phone:''  %>"
               placeholder="Enter Phone"
             />
+            <input type="hidden" name="id" value="<%=  contacts.id  %>" />
             <button type="submit">
-              <img src="img/up-arrow.svg" alt="" /> Upload
+              <img src="img/up-arrow.svg" alt="" /> Update
             </button>
           </form>
         </div>
       </div>
-    </div>
-
-    <div class="wrapper">
-      <h2>List of Contact</h2>
-      <table class="table-responsive table-vaccine">
-        <thead>
-          <tr class="header-row">
-            <th class="table-column">Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% contacts.forEach((contact) => { %>
-
-          <tr>
-            <th scope="row" class="row"><%= contact.name %></th>
-            <td><%= contact.email %></td>
-            <td><%= contact.phone %></td>
-            <td>
-              <a class="edit" href="/<%= contact._id %>">Edit</a>
-              <a href="/delete/<%= contact._id %>" class="delete">Delete</a>
-            </td>
-          </tr>
-
-          <% }) %>
-        </tbody>
-      </table>
     </div>
   </body>
 </html>
